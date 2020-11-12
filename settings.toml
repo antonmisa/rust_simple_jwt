@@ -1,0 +1,23 @@
+[path]
+rsa_public_key = "ssl/rsa.public"
+rsa_private_key = "ssl/rsa.private"
+hmac_key = "test key"
+ec_public_key = "ssl/ec.public"
+ec_private_key = "ssl/ec.private"
+
+[algorithm]
+algRS = "RS256"
+algHS = "HS256"
+algES = "ES256"
+
+[common]
+iss = "simple_jwt"
+sub = "auth"
+
+[expire]
+expAT = 3600
+expRT = 86400
+
+[http]
+host = "0.0.0.0"
+port = 8001
